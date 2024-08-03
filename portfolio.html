@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/others/logo.png">
+    <meta name="author" content="Frankie B Pinat">
+	  <meta name="description" content="Freelance Graphic designer, Video editor, Web developer, and 2d animator.">
+	  <meta name="keywords" content="Graphic Designer, Graphic Design, 2d Animation, Freelance, Frontend Developer, Video Editor, Web Design, Web Designer">
+	  <meta name="theme-color" content="#FFC300">
+	  <meta name="msapplication-navbutton-color" content="#FFC300">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	  <meta property="og:image" content="assets/others/thumbnail.jpg">
+	  <meta property="og:title" content="FP Graphics">
+    <link rel="stylesheet" href="style.css" />
+    <title>FP Graphics</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="overlay overlay-lg">
+        <img src="assets/shapes/square.svg" class="shape square" alt="" />
+        <img src="assets/shapes/circle.svg" class="shape circle" alt="" />
+        <img src="assets/shapes/half-circle.svg" class="shape half-circle1" alt="" />
+        <img src="assets/shapes/half-circle.svg" class="shape half-circle2" alt="" />
+        <img src="assets/shapes/x.svg" class="shape xshape" alt="" />
+        <img src="assets/shapes/wave.svg" class="shape wave wave1" alt="" />
+        <img src="assets/shapes/wave.svg" class="shape wave wave2" alt="" />
+        <img src="assets/shapes/triangle.svg" class="shape triangle" alt="" />
+        <img src="assets/shapes/letters.svg" class="letters" alt="" />
+        <img src="assets/shapes/points1.svg" class="points points1" alt="" />
+      </div>
+      <div id="loader">
+        <div id="preloader">
+           <svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0, 0, 400,400" version="1.1">
+            <g id="svgg">
+              <path id="path" d="M180.800 126.200 L 180.800 180.800 144.400 180.800 L 108.000 180.800 108.000 200.000 L 108.000 219.200 144.400 219.200 L 180.800 219.200 180.800 254.400 L 180.800 289.600 126.833 289.600 C 97.151 289.600,72.581 289.709,72.233 289.843 C 71.668 290.060,71.600 292.143,71.600 309.243 L 71.600 328.400 145.400 328.400 L 219.200 328.400 219.200 273.800 L 219.200 219.200 273.800 219.200 L 328.400 219.200 328.400 145.400 L 328.400 71.600 254.600 71.600 L 180.800 71.600 180.800 126.200 M289.600 145.400 L 289.600 180.800 254.400 180.800 L 219.200 180.800 219.200 145.400 L 219.200 110.000 254.400 110.000 L 289.600 110.000 289.600 145.400 " stroke="none" fill="#FFC300" fill-rule="evenodd"></path>
+            </g>
+          </svg>
+         </div>
+      </div>
+      <div class="toggle">
+        <label class="switch">
+          <input onclick="theme()" class="theme" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <a class="scrollBtnWrap" href="#header"><span class="scrollBtn"></span></a>
+        <span onclick="openToggle()" class="caret"></span>
+      </div>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <img src="assets/others/logo.svg" alt="" />
+          </div>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="index.html#header">Home</a>
+              </li>
+              <li>
+                <a href="index.html#services">Services</a>
+              </li>
+              <li>
+                <a href="index.html#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="index.html#about">About</a>
+              </li>
+              <li>
+                <a href="index.html#certificates">Certificates</a>
+              </li>
+              <li>
+                <a href="index.html#contact">Contact</a>
+              </li>
+              <li>
+                <a href="index.html#hireme" class="active">Hire me</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="portfolio"></div>
+      <section class="portfolio section">
+        <div class="background-bg">
+          <div class="overlay overlay-sm">
+            <img src="assets/shapes/half-circle.svg" class="shape half-circle1" alt="" />
+            <img src="assets/shapes/half-circle.svg" class="shape half-circle2" alt="" />
+            <img src="assets/shapes/square.svg" class="shape square" alt="" />
+            <img src="assets/shapes/wave.svg" class="shape wave" alt="" />
+            <img src="assets/shapes/circle.svg" class="shape circle" alt="" />
+            <img src="assets/shapes/triangle.svg" class="shape triangle" alt="" />
+            <img src="assets/shapes/x.svg" class="shape xshape" alt="" />
+          </div>
+        </div>
+        <div class="lightbox">
+          <div class="lightboxPrev">
+            <h5 class="lightboxTitle">Preview</h5>
+            <div class="lightboxClose">
+              <div class="cross"></div>
+              <img class="lightImg" src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="My works">Portfolio</h3>
+          </div>
+          <div class="section-body">
+            <div class="filter">
+              <button class="filter-btn active" data-filter="*">All</button>
+              <button class="filter-btn" data-filter=".graphic">Graphic</button>
+              <button class="filter-btn" data-filter=".webdev">UI / UX</button>
+              <button class="filter-btn" data-filter=".logo-design">Logo</button>
+              <button class="filter-btn" data-filter=".video">Video</button>
+            </div>
+            <div class="grid">
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port1.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item graphic">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port2.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>SocMed Post</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port3.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/L8giJ0lc6FtjX8r3Xk/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Video Edit</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/0Cmt9LNDrpupi9TeK9/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Motion Graphics</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port4.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item graphic">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port5.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>SocMed Post</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port6.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/qACfcyNmSklBfpXoxA/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Intro</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/Wj9ZsJwWu26KyAZFcy/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Animation</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port7.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item graphic">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port8.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>SocMed Post</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port9.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/aDQH9HZ8lsc06eh6Ai/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Animation</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port10.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item graphic">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port11.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>SocMed Post</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port12.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/cVMN8XtT4D3Jh0QDCy/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Animation</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/abR1pSg5JwzZndYpbZ/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Intro</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port13.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item graphic">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port14.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Shirt Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port15.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Mobile UI</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/MdwcCIO9WNIdRvQz77/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Motion Graphics</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item video">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="https://media.giphy.com/media/EHaxTvwIZpMZlOiuvg/giphy.gif" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Video Edit</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port16.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item graphic">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port17.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Shirt Design</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img class="gallery-src" src="assets/portfolio/port18.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Mobile UI</h3>
+                      <h5>Show Preview</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-folio">
+              <a href="index.html" class="btn">Go Back</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="hireme"></div>
+      <section class="hireme section">
+        <div class="container">
+          <img src="assets/shapes/points3.svg" class="points points1 points-sq" alt="" />
+          <h3 class="title">Let's talk about a project</h3>
+          <p class="text">
+            If you think that my skills are qualified to make your ideas come to life, 
+            dont hesitate to message me and i'll be greatful to work with you.
+          </p>
+          <a href="index.html#contact" class="btn">Hire me</a>
+          <img src="assets/shapes/points3.svg" class="points points2 points-sq" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">About</h3>
+            <p class="text">
+              Im a Freelance Graphic designer, Video editor, Web developer, and 2d animator.
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#header">Home</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#certificates">Certificates</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Services</h3>
+            <ul>
+              <li>
+                <a href="#services">Website</a>
+              </li>
+              <li>
+                <a href="#services">Video</a>
+              </li>
+              <li>
+                <a href="#services">Graphic</a>
+              </li>
+              <li>
+                <a href="#services">Logo</a>
+              </li>
+              <li>
+                <a href="#services">Animation</a>
+              </li>
+              <li>
+                <a href="#services">Digital</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Subscribe</h3>
+            <p class="text">
+              If you want to get notified for latest updates.
+            </p>
+            <div class="footer-input-wrap">
+              <input type="email" class="footer-input" placeholder="Email" />
+              <a href="#" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2020 All rights reserved | Made by 
+              <span>Frankie B Pinat</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var load = document.getElementById("loader");
+      var preload = document.getElementById("preloader");
+
+      window.addEventListener("load", function(){
+        setTimeout(loading, 5500);
+        setTimeout(loaded, 6000);
+        
+        function loading(){
+          preload.style.opacity = "0";
+          preload.style.visibility = "hidden";
+        }
+          
+        function loaded(){
+          load.style.opacity = "0";
+          load.style.visibility = "hidden";
+          document.body.classList.remove("stop-scrolling");
+        }
+      });
+
+      window.addEventListener("beforeunload", function(){
+        load.style.opacity = "1";
+        load.style.visibility = "visible";
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
